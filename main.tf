@@ -38,7 +38,7 @@ resource "azurerm_automation_account" "automate" {
 
 resource "azurerm_role_assignment" "automate" {
     scope                   = data.azurerm_subscription.current.id
-    role_definition_name    = "Contributor"
+    role_definition_name    = var.automation_account_role
     principal_id            = azurerm_automation_account.automate.identity[0].principal_id
 }
 
