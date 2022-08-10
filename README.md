@@ -26,6 +26,7 @@ Schedule automatic stop and start of Azure aks cluster using terraform
       
       schedule_start_time = "2022-07-14T19:00:00+07:00"
       ```
+    These sample values will stop "my-aks" cluster in "my-rg" resoure group at 7PM pacific time every day starting 2022-07-14.  
     
 2. terraform init
 3. terraform plan -var-file=custom_variables.tfvars -out my-tf.plan
